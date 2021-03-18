@@ -68,7 +68,7 @@
                                     <constraint firstAttribute="width" constant="250" id="hmO-uE-xp0"/>
                                     <constraint firstAttribute="height" constant="50" id="sR4-E9-9m7"/>
                                 </constraints>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -106,12 +106,16 @@
                                 <color key="textColor" systemColor="systemGray5Color"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN UP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aai-np-dRb">
-                                <rect key="frame" x="294" y="843" width="66" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqa-Nq-TN8">
+                                <rect key="frame" x="293" y="837" width="66" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemTealColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <state key="normal" title="SIGN UP">
+                                    <color key="titleColor" systemColor="systemTealColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="button:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RFs-eK-JsU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="siva"/>
@@ -120,21 +124,23 @@
                             <constraint firstItem="U2k-XE-Rpb" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="31N-Gn-fnF"/>
                             <constraint firstItem="rFs-dB-x0o" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="49V-Fq-sAQ"/>
                             <constraint firstItem="rFs-dB-x0o" firstAttribute="top" secondItem="g9T-k4-IUx" secondAttribute="bottom" constant="80" id="ARt-eW-nKp"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rFs-dB-x0o" secondAttribute="trailing" constant="82" id="BFc-JD-lE4"/>
                             <constraint firstItem="2l0-0X-obi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="75" id="DIf-r9-4ZT"/>
                             <constraint firstItem="tWB-eV-FuN" firstAttribute="leading" secondItem="h1v-6K-UvR" secondAttribute="trailing" constant="-200" id="GsG-PK-vRR"/>
                             <constraint firstItem="tWB-eV-FuN" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Hh8-Tk-IJI"/>
                             <constraint firstItem="g9T-k4-IUx" firstAttribute="top" secondItem="tWB-eV-FuN" secondAttribute="bottom" constant="44" id="RyH-sK-9fT"/>
                             <constraint firstItem="U2k-XE-Rpb" firstAttribute="top" secondItem="rFs-dB-x0o" secondAttribute="bottom" constant="33" id="Tsn-Lx-tmB"/>
                             <constraint firstAttribute="bottom" secondItem="2l0-0X-obi" secondAttribute="bottom" constant="32" id="YQl-rv-SBu"/>
-                            <constraint firstAttribute="bottom" secondItem="Aai-np-dRb" secondAttribute="bottom" constant="32" id="fdB-uh-sBh"/>
                             <constraint firstItem="h1v-6K-UvR" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="60" id="jQu-O2-UoV"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Aai-np-dRb" secondAttribute="trailing" constant="54" id="kve-DK-opa"/>
                             <constraint firstItem="g9T-k4-IUx" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="obE-nV-6B7"/>
-                            <constraint firstItem="rFs-dB-x0o" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="82" id="vTT-fn-x49"/>
+                            <constraint firstAttribute="bottom" secondItem="aqa-Nq-TN8" secondAttribute="bottom" constant="26" id="sO0-Zw-0p1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aqa-Nq-TN8" secondAttribute="trailing" constant="55" id="sg3-OT-qkI"/>
                             <constraint firstItem="g9T-k4-IUx" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="xKA-Ud-tE6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="email" destination="tWB-eV-FuN" id="uJG-iS-dgf"/>
+                        <outlet property="password" destination="g9T-k4-IUx" id="MA5-tE-Puf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -155,7 +161,7 @@
     <resources>
         <image name="logo" width="112" height="85"/>
         <namedColor name="siva">
-            <color red="0.16700000000000001" green="0.16700000000000001" blue="0.16700000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.16699999570846558" green="0.16699999570846558" blue="0.16699999570846558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

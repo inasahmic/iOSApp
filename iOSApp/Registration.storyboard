@@ -68,7 +68,7 @@
                                     <constraint firstAttribute="width" constant="250" id="ACG-BQ-3ia"/>
                                     <constraint firstAttribute="height" constant="50" id="uXD-nO-MQP"/>
                                 </constraints>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" textContentType="username"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -91,7 +91,7 @@
                                     <constraint firstAttribute="width" constant="150" id="Ucj-tE-fVq"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Back to Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpx-wQ-uyu">
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Back to Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpx-wQ-uyu">
                                 <rect key="frame" x="155.5" y="704" width="103.5" height="21"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" staticText="YES"/>
@@ -107,7 +107,7 @@
                                     <constraint firstAttribute="width" constant="250" id="eT4-tc-ztd"/>
                                     <constraint firstAttribute="height" constant="50" id="jQq-Tp-k2S"/>
                                 </constraints>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -144,6 +144,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fjV-nR-UqD"/>
+                    <connections>
+                        <outlet property="backToLogin" destination="jpx-wQ-uyu" id="0VR-L8-dKO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -185,7 +188,7 @@
     <resources>
         <image name="logo" width="112" height="85"/>
         <namedColor name="siva">
-            <color red="0.16700000000000001" green="0.16700000000000001" blue="0.16700000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.16699999570846558" green="0.16699999570846558" blue="0.16699999570846558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
