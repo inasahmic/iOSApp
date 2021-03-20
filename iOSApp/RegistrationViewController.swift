@@ -27,5 +27,6 @@ class RegistrationViewController: UIViewController {
         })
     }
     
+//  Kada korisnik klikne next (slika dolje desno) treba validirati da su sva polja popunjena i da svako polje zadovoljava kriterije validacije i tek onda otvoriti naredni screen
 
 }

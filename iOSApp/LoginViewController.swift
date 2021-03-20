@@ -7,10 +7,21 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var password: CustomTxtField!
-    @IBOutlet weak var email: CustomTxtField!
+    // RETURN DUGME DA DISMISS KEYBOARD
+    // PROSIRIT VALIDACIJU
+    
+    @IBOutlet weak var password: CustomTxtField!{
+        didSet{
+            password.delegate = self
+        }
+    }
+    @IBOutlet weak var email: CustomTxtField! {
+        didSet {
+            email.delegate = self
+        }
+    }
     
     @IBAction func button(_ sender: Any) {
         
@@ -25,20 +36,34 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
         // Do any additional setup after loading the view.
     }
     
-    func isValidEmail(_ email: String) -> Bool {
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-
-        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        return emailPred.evaluate(with: self.email)
+    
+    func checkPassowrd(password string: String) {
+        if (string.count < 8) {
+            print("Password is too short")
+        } else {
+            print("Everything ok")
+        }
+    }
+    func checkEmail(email string: String) {
+        if (string.count < 8) {
+            print("email is too short")
+        } else {
+            print("Everything ok")
+        }
     }
     
-    func isValidPassword() -> Bool {
-        let passwordRegex = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*()\\-_=+{}|?>.<,:;~`’]{8,}$"
-        return NSPredicate(format: "SELF MATCHES %@", passwordRegex).evaluate(with: self.password)
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        switch textField {
+        case email:
+            checkEmail(email: email.text ?? "")
+        case password:
+            checkPassowrd(password: password.text ?? "")
+        default:
+            break
+        }
     }
     
 
