@@ -360,6 +360,11 @@
                             <constraint firstItem="Axf-Bl-6FG" firstAttribute="top" secondItem="h4L-rl-rkg" secondAttribute="bottom" constant="42" id="ztv-N7-Q5v"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="age" destination="fnX-JQ-qgd" id="AAy-Pw-Ouf"/>
+                        <outlet property="firstName" destination="bCs-fh-GnV" id="6d8-jO-ewv"/>
+                        <outlet property="lastName" destination="oid-Jl-bG7" id="8dU-CZ-aVO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KHO-4o-IXI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

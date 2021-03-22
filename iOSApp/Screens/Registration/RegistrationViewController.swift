@@ -64,6 +64,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
             //print("screen is presented")
         })
     }
+    
     func checkPassowrd(password string: String) {
         if (string.count < 8) {
             print("Password is too short")
@@ -78,9 +79,9 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
             print("Everything ok")
         }
     }
-    func checkUsername(email string: String) {
-        if (string.count < 8) {
-            print("email is too short")
+    func checkUsername(username string: String) {
+        if (string.count < 1) {
+            print("username is too short")
         } else {
             print("Everything ok")
         }
@@ -93,7 +94,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         case password:
             checkPassowrd(password: password.text ?? "")
         case username:
-            checkUsername(email: username.text ?? "")
+            checkUsername(username: username.text ?? "")
         default:
             break
         }

@@ -7,7 +7,23 @@
 
 import UIKit
 
-class RegistrationSecondViewController: UIViewController {
+class RegistrationSecondViewController: UIViewController, UITextFieldDelegate {
+    
+    @IBOutlet weak var firstName: CustomTxtField!{
+        didSet{
+            firstName.delegate = self
+        }
+    }
+    @IBOutlet weak var lastName: CustomTxtField!{
+        didSet{
+            lastName.delegate = self
+        }
+    }
+    @IBOutlet weak var age: CustomTxtField!{
+        didSet{
+            age.delegate = self
+        }    }
+    
 
     @IBAction func backToLogin(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Login", bundle: nil)
@@ -42,6 +58,40 @@ class RegistrationSecondViewController: UIViewController {
         view.endEditing(true)
     }
     
+    func checkFirstName(firstName string: String) {
+        if (string.count < 3) {
+            print("First name is too short")
+        } else {
+            print("Everything ok")
+        }
+    }
+    func checkLastName(lastName string: String) {
+        if (string.count < 3) {
+            print("Last name is too short")
+        } else {
+            print("Everything ok")
+        }
+    }
+    func checkAge(age string: Int) {
+        if (string == 0) {
+            print("Not valid")
+        } else {
+            print("Everything ok")
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        switch textField {
+        case firstName:
+            checkFirstName(firstName: firstName.text ?? "")
+        case lastName:
+            checkLastName(lastName: lastName.text ?? "")
+        case age:
+            checkAge(age: age.hash)
+        default:
+            break
+        }
+    }
 
 
 }
