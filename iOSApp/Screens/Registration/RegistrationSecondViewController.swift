@@ -10,8 +10,8 @@ import UIKit
 class RegistrationSecondViewController: UIViewController {
 
     @IBAction func backToLogin(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "Registration", bundle: nil)
-        let viewcontoroller = storyboard.instantiateViewController(identifier: "RegistrationViewController")
+        let storyboard = UIStoryboard(name: "Login", bundle: nil)
+        let viewcontoroller = storyboard.instantiateViewController(identifier: "LoginViewController")
         self.present(viewcontoroller, animated: true, completion: {
             //print("screen is presented")
         })
@@ -32,8 +32,14 @@ class RegistrationSecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
 
         // Do any additional setup after loading the view.
+    }
+    @objc func dismissKeyboard() {
+        
+        view.endEditing(true)
     }
     
 
