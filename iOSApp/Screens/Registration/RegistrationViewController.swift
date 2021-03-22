@@ -32,7 +32,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         let storyboard = UIStoryboard(name: "Registration", bundle: nil)
         let viewcontoroller = storyboard.instantiateViewController(identifier: "RegistrationSecondViewController")
         self.present(viewcontoroller, animated: true, completion: {
-            //print("screen is presented")
+            
         })
     }
     
@@ -40,7 +40,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         let storyboard = UIStoryboard(name: "Login", bundle: nil)
         let viewcontoroller = storyboard.instantiateViewController(identifier: "LoginViewController")
         self.present(viewcontoroller, animated: true, completion: {
-            //print("screen is presented")
+            
         })
         
     }
@@ -52,6 +52,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
 
         // Do any additional setup after loading the view.
     }
+    
     @objc func dismissKeyboard() {
         
         view.endEditing(true)
