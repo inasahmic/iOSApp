@@ -8,8 +8,7 @@
 import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
-    
-    // RETURN DUGME DA DISMISS KEYBOARD
+
     // PROSIRIT VALIDACIJU
     
     @IBOutlet weak var password: CustomTxtField!{
