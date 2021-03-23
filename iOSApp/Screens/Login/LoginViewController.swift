@@ -9,8 +9,6 @@ import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
-    // PROSIRIT VALIDACIJU
-    
     @IBOutlet weak var password: CustomTxtField!{
         didSet{
             password.delegate = self
@@ -27,9 +25,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         let storyboard = UIStoryboard(name: "Registration", bundle: nil)
         let viewcontoroller = storyboard.instantiateViewController(identifier: "RegistrationViewController")
-        self.present(viewcontoroller, animated: true, completion: {
-            
-        })
+        self.present(viewcontoroller, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
@@ -37,13 +33,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
         
-        // Do any additional setup after loading the view.
-    }
-    @objc func dismissKeyboard() {
-        
-        view.endEditing(true)
     }
     
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
     
     func checkPassowrd(password string: String) {
         if (string.count < 8) {
@@ -52,6 +46,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             print("Everything ok")
         }
     }
+    
     func checkEmail(email string: String) {
         if (string.count < 8) {
             print("email is too short")

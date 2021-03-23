@@ -8,7 +8,7 @@
 import UIKit
 
 class RegistrationViewController: UIViewController, UITextFieldDelegate {
-
+    
     @IBOutlet weak var email: CustomTxtField!{
         didSet{
             email.delegate = self
@@ -27,21 +27,16 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    
     @IBAction func next(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Registration", bundle: nil)
         let viewcontoroller = storyboard.instantiateViewController(identifier: "RegistrationSecondViewController")
-        self.present(viewcontoroller, animated: true, completion: {
-            
-        })
+        self.present(viewcontoroller, animated: true, completion: nil)
     }
     
     @IBAction func backToLogin(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Login", bundle: nil)
         let viewcontoroller = storyboard.instantiateViewController(identifier: "LoginViewController")
-        self.present(viewcontoroller, animated: true, completion: {
-            
-        })
+        self.present(viewcontoroller, animated: true, completion: nil)
         
     }
     
@@ -49,21 +44,11 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
-
-        // Do any additional setup after loading the view.
     }
     
     @objc func dismissKeyboard() {
         
         view.endEditing(true)
-    }
-    
-    @objc func tapBack (_ sender: UITapGestureRecognizer) {
-        let storyboard = UIStoryboard(name: "Login", bundle: nil)
-        let viewcontoroller = storyboard.instantiateViewController(identifier: "LoginViewController")
-        self.present(viewcontoroller, animated: true, completion: {
-            //print("screen is presented")
-        })
     }
     
     func checkPassowrd(password string: String) {
@@ -73,6 +58,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
             print("Everything ok")
         }
     }
+    
     func checkEmail(email string: String) {
         if (string.count < 8) {
             print("email is too short")
@@ -80,6 +66,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
             print("Everything ok")
         }
     }
+    
     func checkUsername(username string: String) {
         if (string.count < 1) {
             print("username is too short")

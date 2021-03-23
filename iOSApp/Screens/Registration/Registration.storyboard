@@ -40,7 +40,7 @@
                                     <action selector="next:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="CdD-AU-lxo"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UP5-Lm-jcS" customClass="CustomTxtField" customModule="iOSApp" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="password" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UP5-Lm-jcS" customClass="CustomTxtField" customModule="iOSApp" customModuleProvider="target">
                                 <rect key="frame" x="82" y="491" width="250" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -67,7 +67,7 @@
                                     <action selector="password:" destination="Y6W-OH-hqX" eventType="editingDidEnd" id="KXw-xF-NTk"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iZo-bV-Bc8" customClass="CustomTxtField" customModule="iOSApp" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="username" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iZo-bV-Bc8" customClass="CustomTxtField" customModule="iOSApp" customModuleProvider="target">
                                 <rect key="frame" x="82" y="397" width="250" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -100,7 +100,7 @@
                                     <constraint firstAttribute="width" constant="150" id="Ucj-tE-fVq"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EpY-RV-0JG" customClass="CustomTxtField" customModule="iOSApp" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" restorationIdentifier="email" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EpY-RV-0JG" customClass="CustomTxtField" customModule="iOSApp" customModuleProvider="target">
                                 <rect key="frame" x="82" y="313" width="250" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
