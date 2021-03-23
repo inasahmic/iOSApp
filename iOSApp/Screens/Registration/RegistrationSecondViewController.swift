@@ -58,7 +58,7 @@ class RegistrationSecondViewController: UIViewController, UITextFieldDelegate {
     
     func checkFirstName(firstName string: String) {
         if (string.count < 3) {
-            let alert = UIAlertController(title: "My Alert", message: "First name too short", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Alert", message: "First name too short", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
             NSLog("The \"OK\" alert occured.")
             }))
@@ -70,7 +70,7 @@ class RegistrationSecondViewController: UIViewController, UITextFieldDelegate {
     
     func checkLastName(lastName string: String) {
         if (string.count < 3) {
-            let alert = UIAlertController(title: "My Alert", message: "First name too short", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Alert", message: "Last name too short", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
             NSLog("The \"OK\" alert occured.")
             }))

@@ -41,7 +41,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     func checkPassowrd(password string: String) {
         if (string.count < 8) {
-            print("Password is too short")
+            let alert = UIAlertController(title: "Alert", message: "Password too short", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(alert, animated: true, completion: nil)
         } else {
             print("Everything ok")
         }
@@ -49,7 +53,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     func checkEmail(email string: String) {
         if (string.count < 8) {
-            print("email is too short")
+            let alert = UIAlertController(title: "Alert", message: "Email too short", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(alert, animated: true, completion: nil)
         } else {
             print("Everything ok")
         }
