@@ -26,6 +26,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let storyboard = UIStoryboard(name: "Registration", bundle: nil)
         let viewcontoroller = storyboard.instantiateViewController(identifier: "RegistrationViewController")
         self.present(viewcontoroller, animated: true, completion: nil)
+        
+        let service = AuthService()
+        service.refreshToken()
+        
     }
     
     override func viewDidLoad() {
@@ -38,6 +42,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
+    
+
     
     func checkPassowrd(password string: String) {
         if (string.count < 8) {

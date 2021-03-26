@@ -362,8 +362,10 @@
                     </view>
                     <connections>
                         <outlet property="age" destination="fnX-JQ-qgd" id="AAy-Pw-Ouf"/>
+                        <outlet property="femaleSelected" destination="dtc-xl-6ac" id="MgU-gU-5WZ"/>
                         <outlet property="firstName" destination="bCs-fh-GnV" id="6d8-jO-ewv"/>
                         <outlet property="lastName" destination="oid-Jl-bG7" id="8dU-CZ-aVO"/>
+                        <outlet property="maleSelected" destination="f9Z-sd-J0e" id="vxM-zh-Twy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KHO-4o-IXI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

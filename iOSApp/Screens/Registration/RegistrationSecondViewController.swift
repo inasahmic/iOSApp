@@ -9,6 +9,10 @@ import UIKit
 
 class RegistrationSecondViewController: UIViewController, UITextFieldDelegate {
     
+    @IBOutlet weak var selected: UIImageView!
+    
+    @IBOutlet weak var notSelected: UIImageView!
+    
     @IBOutlet weak var firstName: CustomTxtField!{
         didSet{
             firstName.delegate = self
@@ -40,9 +44,6 @@ class RegistrationSecondViewController: UIViewController, UITextFieldDelegate {
     }
     
     // MARK: - Methods -
-    //  var isSelected: Bool { get set }
-    
-    //  Male I Female su radio buttons koji ne postoji u iOS. Kao alternativa koristiti button I image i state property selected. Kreirati enum sa gender opcijama i preko tog enuma pratiti state da se zna da li je selektovan male ili female. Ne koristiti string za pracenje koja je opcija selektovana za gender.
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +55,29 @@ class RegistrationSecondViewController: UIViewController, UITextFieldDelegate {
     @objc func dismissKeyboard() {
         
         view.endEditing(true)
+    }
+    
+    enum Gender_Select{
+        case maleSelected
+        case femaleSelected
+    }
+    
+    func genderMale(maleSelected: Bool){
+        if (maleSelected == true){
+            // show image with blue dot
+            // imageView = selected
+        } else {
+            // show image with empty circle
+            // imageView = notSelected
+        }
+    }
+    func genderFemale(femaleSelected: Bool){
+        if (femaleSelected == true){
+            // show image with blue dot
+            
+        } else {
+            //show image with empty circle
+        }
     }
     
     func checkFirstName(firstName string: String) {
