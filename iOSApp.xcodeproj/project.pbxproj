@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A0897653260E06F300AF2A3A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0897652260E06F300AF2A3A /* AuthService.swift */; };
 		A0ACF17D26067BE500AEAA03 /* RegistrationSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0ACF17C26067BE500AEAA03 /* RegistrationSecondViewController.swift */; };
 		A0B6A1552602700900B7C886 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B6A1542602700900B7C886 /* Login.storyboard */; };
 		A0B6A1572602702700B7C886 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B6A1562602702700B7C886 /* Registration.storyboard */; };
@@ -27,6 +28,7 @@
 		5F4A359122F2FC36F4384507 /* Pods_iOSApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B5C7C8FB87B83826B77AB44 /* Pods-iOSApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSApp.release.xcconfig"; path = "Target Support Files/Pods-iOSApp/Pods-iOSApp.release.xcconfig"; sourceTree = "<group>"; };
 		8B7613190C883533557EDB4A /* Pods-iOSApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSApp.debug.xcconfig"; path = "Target Support Files/Pods-iOSApp/Pods-iOSApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A0897652260E06F300AF2A3A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A0ACF17C26067BE500AEAA03 /* RegistrationSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationSecondViewController.swift; sourceTree = "<group>"; };
 		A0B6A1542602700900B7C886 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		A0B6A1562602702700B7C886 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
@@ -73,6 +75,127 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A01F3AFB260903340051E3C4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A0C682B6260257350032A22C /* AppDelegate.swift */,
+				A0C682B8260257350032A22C /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A01F3AFC260903450051E3C4 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A01F3B08260906520051E3C4 /* Custom */,
+				A01F3B072609054A0051E3C4 /* Launch Sreen */,
+				A01F3AFE260903B10051E3C4 /* Main */,
+				A01F3B00260903D70051E3C4 /* Registration */,
+				A01F3AFF260903C30051E3C4 /* Login */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A01F3AFD260903720051E3C4 /* Data Access */ = {
+			isa = PBXGroup;
+			children = (
+				A01F3B02260904060051E3C4 /* Caching */,
+				A01F3B01260903F30051E3C4 /* Network */,
+			);
+			path = "Data Access";
+			sourceTree = "<group>";
+		};
+		A01F3AFE260903B10051E3C4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A0C682BA260257350032A22C /* ViewController.swift */,
+				A0C682BC260257350032A22C /* Main.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A01F3AFF260903C30051E3C4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A0B6A1542602700900B7C886 /* Login.storyboard */,
+				A0B6A1582602732300B7C886 /* LoginViewController.swift */,
+				A0897652260E06F300AF2A3A /* AuthService.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A01F3B00260903D70051E3C4 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				A0B6A1562602702700B7C886 /* Registration.storyboard */,
+				A0B6A15A2602733700B7C886 /* RegistrationViewController.swift */,
+				A0ACF17C26067BE500AEAA03 /* RegistrationSecondViewController.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		A01F3B01260903F30051E3C4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A01F3B02260904060051E3C4 /* Caching */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Caching;
+			sourceTree = "<group>";
+		};
+		A01F3B032609041F0051E3C4 /* Business Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A01F3B04260904470051E3C4 /* Entities */,
+			);
+			path = "Business Domain";
+			sourceTree = "<group>";
+		};
+		A01F3B04260904470051E3C4 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		A01F3B05260904560051E3C4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A01F3B06260904770051E3C4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A0C682C4260257360032A22C /* Info.plist */,
+				A0C682BF260257360032A22C /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A01F3B072609054A0051E3C4 /* Launch Sreen */ = {
+			isa = PBXGroup;
+			children = (
+				A0C682C1260257360032A22C /* LaunchScreen.storyboard */,
+			);
+			path = "Launch Sreen";
+			sourceTree = "<group>";
+		};
+		A01F3B08260906520051E3C4 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				A0B6A15E2602815500B7C886 /* CustomButton.swift */,
+				A0B6A15C26027F3300B7C886 /* CustomTxtField.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		A0C682AA260257350032A22C = {
 			isa = PBXGroup;
 			children = (
@@ -94,20 +217,12 @@
 		A0C682B5260257350032A22C /* iOSApp */ = {
 			isa = PBXGroup;
 			children = (
-				A0C682B6260257350032A22C /* AppDelegate.swift */,
-				A0C682B8260257350032A22C /* SceneDelegate.swift */,
-				A0C682BA260257350032A22C /* ViewController.swift */,
-				A0C682BC260257350032A22C /* Main.storyboard */,
-				A0C682BF260257360032A22C /* Assets.xcassets */,
-				A0C682C1260257360032A22C /* LaunchScreen.storyboard */,
-				A0C682C4260257360032A22C /* Info.plist */,
-				A0B6A1542602700900B7C886 /* Login.storyboard */,
-				A0B6A15E2602815500B7C886 /* CustomButton.swift */,
-				A0B6A1562602702700B7C886 /* Registration.storyboard */,
-				A0B6A1582602732300B7C886 /* LoginViewController.swift */,
-				A0B6A15A2602733700B7C886 /* RegistrationViewController.swift */,
-				A0B6A15C26027F3300B7C886 /* CustomTxtField.swift */,
-				A0ACF17C26067BE500AEAA03 /* RegistrationSecondViewController.swift */,
+				A01F3AFB260903340051E3C4 /* App */,
+				A01F3AFC260903450051E3C4 /* Screens */,
+				A01F3AFD260903720051E3C4 /* Data Access */,
+				A01F3B032609041F0051E3C4 /* Business Domain */,
+				A01F3B05260904560051E3C4 /* Core */,
+				A01F3B06260904770051E3C4 /* Resources */,
 			);
 			path = iOSApp;
 			sourceTree = "<group>";
@@ -231,6 +346,7 @@
 				A0B6A1592602732300B7C886 /* LoginViewController.swift in Sources */,
 				A0C682BB260257350032A22C /* ViewController.swift in Sources */,
 				A0B6A15D26027F3300B7C886 /* CustomTxtField.swift in Sources */,
+				A0897653260E06F300AF2A3A /* AuthService.swift in Sources */,
 				A0C682B7260257350032A22C /* AppDelegate.swift in Sources */,
 				A0B6A15F2602815500B7C886 /* CustomButton.swift in Sources */,
 				A0C682B9260257350032A22C /* SceneDelegate.swift in Sources */,
