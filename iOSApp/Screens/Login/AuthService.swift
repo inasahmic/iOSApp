@@ -26,9 +26,9 @@ class AuthService {
                 let dictionaries = dataParsed as? [String: Any]
                 let expiresAt = dictionaries?["expires_at"]
                 let requestToken = dictionaries?["request_token"]
+                
                 self.expiresAt = expiresAt as? String
                 self.reqToken = requestToken as? String
-                
             } else {
                 print("Error occured -> \(String(describing: error?.localizedDescription))")
             }

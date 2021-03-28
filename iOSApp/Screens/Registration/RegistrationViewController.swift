@@ -55,7 +55,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         if (string.count < 8) {
             let alert = UIAlertController(title: "Alert", message: "Password too short", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
-            NSLog("The \"OK\" alert occured.")
+                NSLog("The \"OK\" alert occured.")
             }))
             self.present(alert, animated: true, completion: nil)
         } else {
@@ -67,7 +67,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         if (string.count < 8) {
             let alert = UIAlertController(title: "Alert", message: "Email too short", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
-            NSLog("The \"OK\" alert occured.")
+                NSLog("The \"OK\" alert occured.")
             }))
             self.present(alert, animated: true, completion: nil)
         } else {
@@ -79,7 +79,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         if (string.count < 1) {
             let alert = UIAlertController(title: "Alert", message: "Username too short", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
-            NSLog("The \"OK\" alert occured.")
+                NSLog("The \"OK\" alert occured.")
             }))
             self.present(alert, animated: true, completion: nil)
         } else {
@@ -100,6 +100,6 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-//  Kada korisnik klikne next (slika dolje desno) treba validirati da su sva polja popunjena i da svako polje zadovoljava kriterije validacije i tek onda otvoriti naredni screen
-
+    //  Kada korisnik klikne next (slika dolje desno) treba validirati da su sva polja popunjena i da svako polje zadovoljava kriterije validacije i tek onda otvoriti naredni screen
+    
 }

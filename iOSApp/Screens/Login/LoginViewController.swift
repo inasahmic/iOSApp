@@ -25,11 +25,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         let storyboard = UIStoryboard(name: "Registration", bundle: nil)
         let viewcontoroller = storyboard.instantiateViewController(identifier: "RegistrationViewController")
-        self.present(viewcontoroller, animated: true, completion: nil)
-        
         let service = AuthService()
-        service.refreshToken()
         
+        self.present(viewcontoroller, animated: true, completion: nil)
+        service.refreshToken()
+        print(service.reqToken!)
     }
     
     override func viewDidLoad() {
@@ -43,13 +43,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         view.endEditing(true)
     }
     
-
-    
     func checkPassowrd(password string: String) {
         if (string.count < 8) {
             let alert = UIAlertController(title: "Alert", message: "Password too short", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
-            NSLog("The \"OK\" alert occured.")
+                NSLog("The \"OK\" alert occured.")
             }))
             self.present(alert, animated: true, completion: nil)
         } else {
@@ -61,7 +59,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         if (string.count < 8) {
             let alert = UIAlertController(title: "Alert", message: "Email too short", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
-            NSLog("The \"OK\" alert occured.")
+                NSLog("The \"OK\" alert occured.")
             }))
             self.present(alert, animated: true, completion: nil)
         } else {

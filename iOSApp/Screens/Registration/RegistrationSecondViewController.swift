@@ -33,13 +33,13 @@ class RegistrationSecondViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func backToLogin(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Login", bundle: nil)
-        let viewcontoroller = storyboard.instantiateViewController(identifier: "LoginViewController")
+        let viewcontoroller = storyboard.instantiateViewController(withIdentifier: String(describing: LoginViewController.self))
         self.present(viewcontoroller, animated: true, completion: nil)
     }
     
     @IBAction func back(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Registration", bundle: nil)
-        let viewcontoroller = storyboard.instantiateViewController(identifier: "RegistrationViewController")
+        let viewcontoroller = storyboard.instantiateViewController(withIdentifier: String(describing: RegistrationViewController.self))
         self.present(viewcontoroller, animated: true, completion: nil)
     }
     
@@ -49,11 +49,9 @@ class RegistrationSecondViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
-
     }
     
     @objc func dismissKeyboard() {
-        
         view.endEditing(true)
     }
     
@@ -84,7 +82,7 @@ class RegistrationSecondViewController: UIViewController, UITextFieldDelegate {
         if (string.count < 3) {
             let alert = UIAlertController(title: "Alert", message: "First name too short", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
-            NSLog("The \"OK\" alert occured.")
+                NSLog("The \"OK\" alert occured.")
             }))
             self.present(alert, animated: true, completion: nil)
         } else {
@@ -96,7 +94,7 @@ class RegistrationSecondViewController: UIViewController, UITextFieldDelegate {
         if (string.count < 3) {
             let alert = UIAlertController(title: "Alert", message: "Last name too short", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
-            NSLog("The \"OK\" alert occured.")
+                NSLog("The \"OK\" alert occured.")
             }))
             self.present(alert, animated: true, completion: nil)
         } else {
