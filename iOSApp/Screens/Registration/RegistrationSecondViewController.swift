@@ -55,28 +55,28 @@ class RegistrationSecondViewController: UIViewController, UITextFieldDelegate {
         view.endEditing(true)
     }
     
-    enum Gender_Select{
-        case maleSelected
-        case femaleSelected
-    }
-    
-    func genderMale(maleSelected: Bool){
-        if (maleSelected == true){
-            // show image with blue dot
-            // imageView = selected
-        } else {
-            // show image with empty circle
-            // imageView = notSelected
-        }
-    }
-    func genderFemale(femaleSelected: Bool){
-        if (femaleSelected == true){
-            // show image with blue dot
-            
-        } else {
-            //show image with empty circle
-        }
-    }
+//    enum Gender_Select{
+//        case maleSelected
+//        case femaleSelected
+//    }
+//
+//    func genderMale(maleSelected: Bool){
+//        if (maleSelected == true){
+//            // show image with blue dot
+//            // imageView = selected
+//        } else {
+//            // show image with empty circle
+//            // imageView = notSelected
+//        }
+//    }
+//    func genderFemale(femaleSelected: Bool){
+//        if (femaleSelected == true){
+//            // show image with blue dot
+//
+//        } else {
+//            //show image with empty circle
+//        }
+//    }
     
     func checkFirstName(firstName string: String) {
         if (string.count < 3) {

@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A023B993261262B800D41F86 /* CustomCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A023B992261262B800D41F86 /* CustomCellView.xib */; };
-		A023B9952612674B00D41F86 /* CustomTvCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A023B9942612674B00D41F86 /* CustomTvCellView.xib */; };
-		A07421992613B0F6003DF9D2 /* CustomCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07421982613B0F6003DF9D2 /* CustomCellView.swift */; };
 		A0897653260E06F300AF2A3A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0897652260E06F300AF2A3A /* AuthService.swift */; };
+		A08A813B261654B300943C99 /* HorizontalRailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08A8139261654B300943C99 /* HorizontalRailsCollectionViewCell.swift */; };
+		A08A813C261654B300943C99 /* HorizontalRailsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08A813A261654B300943C99 /* HorizontalRailsCollectionViewCell.xib */; };
 		A0ACF17D26067BE500AEAA03 /* RegistrationSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0ACF17C26067BE500AEAA03 /* RegistrationSecondViewController.swift */; };
 		A0B6A1552602700900B7C886 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B6A1542602700900B7C886 /* Login.storyboard */; };
 		A0B6A1572602702700B7C886 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B6A1562602702700B7C886 /* Registration.storyboard */; };
@@ -24,6 +23,8 @@
 		A0C682BE260257350032A22C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C682BC260257350032A22C /* Main.storyboard */; };
 		A0C682C0260257360032A22C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C682BF260257360032A22C /* Assets.xcassets */; };
 		A0C682C3260257360032A22C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C682C1260257360032A22C /* LaunchScreen.storyboard */; };
+		A0E10CAB26151BE200D36477 /* HorizontalRailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E10CA926151BE200D36477 /* HorizontalRailsTableViewCell.swift */; };
+		A0E10CAC26151BE200D36477 /* HorizontalRailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0E10CAA26151BE200D36477 /* HorizontalRailsTableViewCell.xib */; };
 		F3102CE6B8151059DCC7E71D /* Pods_iOSApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4A359122F2FC36F4384507 /* Pods_iOSApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,10 +32,9 @@
 		5F4A359122F2FC36F4384507 /* Pods_iOSApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B5C7C8FB87B83826B77AB44 /* Pods-iOSApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSApp.release.xcconfig"; path = "Target Support Files/Pods-iOSApp/Pods-iOSApp.release.xcconfig"; sourceTree = "<group>"; };
 		8B7613190C883533557EDB4A /* Pods-iOSApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSApp.debug.xcconfig"; path = "Target Support Files/Pods-iOSApp/Pods-iOSApp.debug.xcconfig"; sourceTree = "<group>"; };
-		A023B992261262B800D41F86 /* CustomCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCellView.xib; sourceTree = "<group>"; };
-		A023B9942612674B00D41F86 /* CustomTvCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTvCellView.xib; sourceTree = "<group>"; };
-		A07421982613B0F6003DF9D2 /* CustomCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellView.swift; sourceTree = "<group>"; };
 		A0897652260E06F300AF2A3A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		A08A8139261654B300943C99 /* HorizontalRailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalRailsCollectionViewCell.swift; sourceTree = "<group>"; };
+		A08A813A261654B300943C99 /* HorizontalRailsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalRailsCollectionViewCell.xib; sourceTree = "<group>"; };
 		A0ACF17C26067BE500AEAA03 /* RegistrationSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationSecondViewController.swift; sourceTree = "<group>"; };
 		A0B6A1542602700900B7C886 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		A0B6A1562602702700B7C886 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
@@ -50,6 +50,8 @@
 		A0C682BF260257360032A22C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0C682C2260257360032A22C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0C682C4260257360032A22C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0E10CA926151BE200D36477 /* HorizontalRailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalRailsTableViewCell.swift; sourceTree = "<group>"; };
+		A0E10CAA26151BE200D36477 /* HorizontalRailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalRailsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,9 +118,10 @@
 			children = (
 				A0C682BA260257350032A22C /* ViewController.swift */,
 				A0C682BC260257350032A22C /* Main.storyboard */,
-				A023B992261262B800D41F86 /* CustomCellView.xib */,
-				A023B9942612674B00D41F86 /* CustomTvCellView.xib */,
-				A07421982613B0F6003DF9D2 /* CustomCellView.swift */,
+				A0E10CA926151BE200D36477 /* HorizontalRailsTableViewCell.swift */,
+				A0E10CAA26151BE200D36477 /* HorizontalRailsTableViewCell.xib */,
+				A08A8139261654B300943C99 /* HorizontalRailsCollectionViewCell.swift */,
+				A08A813A261654B300943C99 /* HorizontalRailsCollectionViewCell.xib */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				A0C682AF260257350032A22C /* Sources */,
 				A0C682B0260257350032A22C /* Frameworks */,
 				A0C682B1260257350032A22C /* Resources */,
+				A08A813D2616574B00943C99 /* ShellScript */,
 				95C2A50D6F9E4394D6AA648C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -297,11 +301,11 @@
 			files = (
 				A0B6A1572602702700B7C886 /* Registration.storyboard in Resources */,
 				A0B6A1552602700900B7C886 /* Login.storyboard in Resources */,
+				A0E10CAC26151BE200D36477 /* HorizontalRailsTableViewCell.xib in Resources */,
 				A0C682C3260257360032A22C /* LaunchScreen.storyboard in Resources */,
 				A0C682C0260257360032A22C /* Assets.xcassets in Resources */,
-				A023B9952612674B00D41F86 /* CustomTvCellView.xib in Resources */,
 				A0C682BE260257350032A22C /* Main.storyboard in Resources */,
-				A023B993261262B800D41F86 /* CustomCellView.xib in Resources */,
+				A08A813C261654B300943C99 /* HorizontalRailsCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +351,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSApp/Pods-iOSApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A08A813D2616574B00943C99 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftgen >/dev/null; then\n    swiftgen run xcassets -t swift4 \"${SRCROOT}/${TARGET_NAME}/Resources/Assets.xcassets\" --output \"${TARGET_NAME}/UIImage+Assets.swift\"\nelse\n    echo \"warning: SwiftGen not installed\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -354,13 +375,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0E10CAB26151BE200D36477 /* HorizontalRailsTableViewCell.swift in Sources */,
 				A0B6A1592602732300B7C886 /* LoginViewController.swift in Sources */,
 				A0C682BB260257350032A22C /* ViewController.swift in Sources */,
 				A0B6A15D26027F3300B7C886 /* CustomTxtField.swift in Sources */,
-				A07421992613B0F6003DF9D2 /* CustomCellView.swift in Sources */,
 				A0897653260E06F300AF2A3A /* AuthService.swift in Sources */,
 				A0C682B7260257350032A22C /* AppDelegate.swift in Sources */,
 				A0B6A15F2602815500B7C886 /* CustomButton.swift in Sources */,
+				A08A813B261654B300943C99 /* HorizontalRailsCollectionViewCell.swift in Sources */,
 				A0C682B9260257350032A22C /* SceneDelegate.swift in Sources */,
 				A0B6A15B2602733700B7C886 /* RegistrationViewController.swift in Sources */,
 				A0ACF17D26067BE500AEAA03 /* RegistrationSecondViewController.swift in Sources */,

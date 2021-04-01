@@ -8,35 +8,43 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
-    @IBOutlet var tableView: UIView!
+    
+    @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-    }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        tableView.delegate = self
+        tableView.dataSource = self
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // Table view cells are reused and should be dequeued using a cell identifier.
         _ = "CustomTableViewCell"
             
-        let cell = tableView.dequeueReusableCell (withIdentifier: "CustomCellView", for:  indexPath) as! CustomCellView
+        let cell = tableView.dequeueReusableCell (withIdentifier: "HorizontalRailsTableViewCell", for:  indexPath) as! HorizontalRailsTableViewCell
         
-        cell.view.layer.cornerRadius = 10
+        cell.collectionView.layer.cornerRadius = 10
             
             return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Selected cell \(indexPath.row)")
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
     }
-}
+    
+    @objc func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    // Create a standard header that includes the returned text.
+    @objc internal func tableView(_ tableView: UITableView, titleForHeaderInSection
+                                section: Int) -> String? {
+       return "Header \(section)"
+    }
 
+    // Create a standard footer that includes the returned text.
+    @objc internal func tableView(_ tableView: UITableView, titleForFooterInSection
+                                section: Int) -> String? {
+       return "Footer \(section)"
+    }
+    
+}

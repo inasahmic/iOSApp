@@ -29,7 +29,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         self.present(viewcontoroller, animated: true, completion: nil)
         service.refreshToken()
-        print(service.reqToken!)
+       // print(service.reqToken!)
     }
     
     override func viewDidLoad() {

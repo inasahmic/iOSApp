@@ -362,10 +362,8 @@
                     </view>
                     <connections>
                         <outlet property="age" destination="fnX-JQ-qgd" id="AAy-Pw-Ouf"/>
-                        <outlet property="femaleSelected" destination="dtc-xl-6ac" id="MgU-gU-5WZ"/>
                         <outlet property="firstName" destination="bCs-fh-GnV" id="6d8-jO-ewv"/>
                         <outlet property="lastName" destination="oid-Jl-bG7" id="8dU-CZ-aVO"/>
-                        <outlet property="maleSelected" destination="f9Z-sd-J0e" id="vxM-zh-Twy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KHO-4o-IXI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -391,35 +389,6 @@
             <point key="canvasLocation" x="18.840579710144929" y="75"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="Axf-Bl-6FG">
-            <size key="intrinsicContentSize" width="40" height="30"/>
-        </designable>
-        <designable name="EpY-RV-0JG">
-            <size key="intrinsicContentSize" width="58.5" height="34"/>
-        </designable>
-        <designable name="Man-aP-D9b">
-            <size key="intrinsicContentSize" width="51" height="36"/>
-        </designable>
-        <designable name="UP5-Lm-jcS">
-            <size key="intrinsicContentSize" width="90.5" height="34"/>
-        </designable>
-        <designable name="bCs-fh-GnV">
-            <size key="intrinsicContentSize" width="89.5" height="34"/>
-        </designable>
-        <designable name="fnX-JQ-qgd">
-            <size key="intrinsicContentSize" width="53.5" height="34"/>
-        </designable>
-        <designable name="iZo-bV-Bc8">
-            <size key="intrinsicContentSize" width="86" height="34"/>
-        </designable>
-        <designable name="jMq-Wm-UvW">
-            <size key="intrinsicContentSize" width="39" height="30"/>
-        </designable>
-        <designable name="oid-Jl-bG7">
-            <size key="intrinsicContentSize" width="88.5" height="34"/>
-        </designable>
-    </designables>
     <resources>
         <image name="logo" width="112" height="85"/>
         <image name="notselected" width="28" height="28"/>
