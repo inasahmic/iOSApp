@@ -15,36 +15,44 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         
+        self.tableView.register(UINib(nibName: "CustomHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: "CustomHeaderView")
+        self.tableView.register(UINib(nibName: "HorizontalRailsTableViewCell", bundle: nil), forCellReuseIdentifier: "HorizontalRailsTableViewCell")
     }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        _ = "CustomTableViewCell"
-            
-        let cell = tableView.dequeueReusableCell (withIdentifier: "HorizontalRailsTableViewCell", for:  indexPath) as! HorizontalRailsTableViewCell
-        
-        cell.collectionView.layer.cornerRadius = 10
-            
-            return cell
-    }
-    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120
     }
-    
-    @objc func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
-    
-    // Create a standard header that includes the returned text.
-    @objc internal func tableView(_ tableView: UITableView, titleForHeaderInSection
-                                section: Int) -> String? {
-       return "Header \(section)"
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "CustomHeaderView") as! CustomHeaderView
+        headerView.sectionTitleLabel.text = "Movies"
+        return headerView
     }
 
-    // Create a standard footer that includes the returned text.
-    @objc internal func tableView(_ tableView: UITableView, titleForFooterInSection
-                                section: Int) -> String? {
-       return "Footer \(section)"
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
     }
-    
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        _ = "HorizontalRailsTableViewCell"
+        
+        let cell = tableView.dequeueReusableCell (withIdentifier: "HorizontalRailsTableViewCell", for:  indexPath) as! HorizontalRailsTableViewCell
+        
+        cell.textLabel?.text = "Slike"
+        return cell
+    }
 }
+
+
+
+
+
+

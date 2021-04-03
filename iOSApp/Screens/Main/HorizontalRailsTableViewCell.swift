@@ -8,6 +8,7 @@
 import UIKit
 
 class HorizontalRailsTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
+
     
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -15,6 +16,7 @@ class HorizontalRailsTableViewCell: UITableViewCell, UICollectionViewDelegate, U
         super.awakeFromNib()
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.register(UINib(nibName: "HorizontalRailsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "HorizontalRailsCollectionViewCell")
        
     }
 
@@ -28,6 +30,15 @@ class HorizontalRailsTableViewCell: UITableViewCell, UICollectionViewDelegate, U
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HorizontalRailsCollectionViewCell", for: indexPath) as! HorizontalRailsCollectionViewCell
+        
+            return cell
+    }
+    
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        collectionView.layer.cornerRadius = 10
+        collectionView.layer.masksToBounds = true
         
     }
     

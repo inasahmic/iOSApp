@@ -10,6 +10,7 @@
 		A0897653260E06F300AF2A3A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0897652260E06F300AF2A3A /* AuthService.swift */; };
 		A08A813B261654B300943C99 /* HorizontalRailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08A8139261654B300943C99 /* HorizontalRailsCollectionViewCell.swift */; };
 		A08A813C261654B300943C99 /* HorizontalRailsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08A813A261654B300943C99 /* HorizontalRailsCollectionViewCell.xib */; };
+		A095FF2C26166DA100B395D9 /* UIImage+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A095FF2B26166DA100B395D9 /* UIImage+Assets.swift */; };
 		A0ACF17D26067BE500AEAA03 /* RegistrationSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0ACF17C26067BE500AEAA03 /* RegistrationSecondViewController.swift */; };
 		A0B6A1552602700900B7C886 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B6A1542602700900B7C886 /* Login.storyboard */; };
 		A0B6A1572602702700B7C886 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B6A1562602702700B7C886 /* Registration.storyboard */; };
@@ -17,6 +18,8 @@
 		A0B6A15B2602733700B7C886 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B6A15A2602733700B7C886 /* RegistrationViewController.swift */; };
 		A0B6A15D26027F3300B7C886 /* CustomTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B6A15C26027F3300B7C886 /* CustomTxtField.swift */; };
 		A0B6A15F2602815500B7C886 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B6A15E2602815500B7C886 /* CustomButton.swift */; };
+		A0BF00612617B1E50049313F /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF00602617B1E50049313F /* CustomHeaderView.swift */; };
+		A0BF00632617B20A0049313F /* CustomHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0BF00622617B20A0049313F /* CustomHeaderView.xib */; };
 		A0C682B7260257350032A22C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C682B6260257350032A22C /* AppDelegate.swift */; };
 		A0C682B9260257350032A22C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C682B8260257350032A22C /* SceneDelegate.swift */; };
 		A0C682BB260257350032A22C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C682BA260257350032A22C /* ViewController.swift */; };
@@ -35,6 +38,7 @@
 		A0897652260E06F300AF2A3A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A08A8139261654B300943C99 /* HorizontalRailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalRailsCollectionViewCell.swift; sourceTree = "<group>"; };
 		A08A813A261654B300943C99 /* HorizontalRailsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalRailsCollectionViewCell.xib; sourceTree = "<group>"; };
+		A095FF2B26166DA100B395D9 /* UIImage+Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Assets.swift"; path = "iOSApp/UIImage+Assets.swift"; sourceTree = SOURCE_ROOT; };
 		A0ACF17C26067BE500AEAA03 /* RegistrationSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationSecondViewController.swift; sourceTree = "<group>"; };
 		A0B6A1542602700900B7C886 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		A0B6A1562602702700B7C886 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
@@ -42,6 +46,8 @@
 		A0B6A15A2602733700B7C886 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		A0B6A15C26027F3300B7C886 /* CustomTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTxtField.swift; sourceTree = "<group>"; };
 		A0B6A15E2602815500B7C886 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		A0BF00602617B1E50049313F /* CustomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
+		A0BF00622617B20A0049313F /* CustomHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeaderView.xib; sourceTree = "<group>"; };
 		A0C682B3260257350032A22C /* iOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C682B6260257350032A22C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C682B8260257350032A22C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -178,6 +184,7 @@
 		A01F3B05260904560051E3C4 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A095FF2A26166D8700B395D9 /* Extensions */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -204,8 +211,18 @@
 			children = (
 				A0B6A15E2602815500B7C886 /* CustomButton.swift */,
 				A0B6A15C26027F3300B7C886 /* CustomTxtField.swift */,
+				A0BF00602617B1E50049313F /* CustomHeaderView.swift */,
+				A0BF00622617B20A0049313F /* CustomHeaderView.xib */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		A095FF2A26166D8700B395D9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A095FF2B26166DA100B395D9 /* UIImage+Assets.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A0C682AA260257350032A22C = {
@@ -250,7 +267,6 @@
 				A0C682AF260257350032A22C /* Sources */,
 				A0C682B0260257350032A22C /* Frameworks */,
 				A0C682B1260257350032A22C /* Resources */,
-				A08A813D2616574B00943C99 /* ShellScript */,
 				95C2A50D6F9E4394D6AA648C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -303,6 +319,7 @@
 				A0B6A1552602700900B7C886 /* Login.storyboard in Resources */,
 				A0E10CAC26151BE200D36477 /* HorizontalRailsTableViewCell.xib in Resources */,
 				A0C682C3260257360032A22C /* LaunchScreen.storyboard in Resources */,
+				A0BF00632617B20A0049313F /* CustomHeaderView.xib in Resources */,
 				A0C682C0260257360032A22C /* Assets.xcassets in Resources */,
 				A0C682BE260257350032A22C /* Main.storyboard in Resources */,
 				A08A813C261654B300943C99 /* HorizontalRailsCollectionViewCell.xib in Resources */,
@@ -351,23 +368,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSApp/Pods-iOSApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A08A813D2616574B00943C99 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "if which swiftgen >/dev/null; then\n    swiftgen run xcassets -t swift4 \"${SRCROOT}/${TARGET_NAME}/Resources/Assets.xcassets\" --output \"${TARGET_NAME}/UIImage+Assets.swift\"\nelse\n    echo \"warning: SwiftGen not installed\"\nfi\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -383,8 +383,10 @@
 				A0C682B7260257350032A22C /* AppDelegate.swift in Sources */,
 				A0B6A15F2602815500B7C886 /* CustomButton.swift in Sources */,
 				A08A813B261654B300943C99 /* HorizontalRailsCollectionViewCell.swift in Sources */,
+				A0BF00612617B1E50049313F /* CustomHeaderView.swift in Sources */,
 				A0C682B9260257350032A22C /* SceneDelegate.swift in Sources */,
 				A0B6A15B2602733700B7C886 /* RegistrationViewController.swift in Sources */,
+				A095FF2C26166DA100B395D9 /* UIImage+Assets.swift in Sources */,
 				A0ACF17D26067BE500AEAA03 /* RegistrationSecondViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
