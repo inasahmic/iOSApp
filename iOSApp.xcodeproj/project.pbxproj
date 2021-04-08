@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A00C6A2D261CE5D600FD0979 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A00C6A2C261CE5D600FD0979 /* Kingfisher */; };
+		A00C6A30261CE64000FD0979 /* UIImage+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00C6A2F261CE64000FD0979 /* UIImage+Assets.swift */; };
+		A05914B4261E14E400BDBEBE /* CoverScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05914B3261E14E400BDBEBE /* CoverScreenViewController.swift */; };
 		A0897653260E06F300AF2A3A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0897652260E06F300AF2A3A /* AuthService.swift */; };
 		A08A813B261654B300943C99 /* HorizontalRailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08A8139261654B300943C99 /* HorizontalRailsCollectionViewCell.swift */; };
 		A08A813C261654B300943C99 /* HorizontalRailsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08A813A261654B300943C99 /* HorizontalRailsCollectionViewCell.xib */; };
@@ -35,6 +38,8 @@
 		5F4A359122F2FC36F4384507 /* Pods_iOSApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B5C7C8FB87B83826B77AB44 /* Pods-iOSApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSApp.release.xcconfig"; path = "Target Support Files/Pods-iOSApp/Pods-iOSApp.release.xcconfig"; sourceTree = "<group>"; };
 		8B7613190C883533557EDB4A /* Pods-iOSApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSApp.debug.xcconfig"; path = "Target Support Files/Pods-iOSApp/Pods-iOSApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A00C6A2F261CE64000FD0979 /* UIImage+Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Assets.swift"; sourceTree = "<group>"; };
+		A05914B3261E14E400BDBEBE /* CoverScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverScreenViewController.swift; sourceTree = "<group>"; };
 		A0897652260E06F300AF2A3A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A08A8139261654B300943C99 /* HorizontalRailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalRailsCollectionViewCell.swift; sourceTree = "<group>"; };
 		A08A813A261654B300943C99 /* HorizontalRailsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalRailsCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -65,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00C6A2D261CE5D600FD0979 /* Kingfisher in Frameworks */,
 				F3102CE6B8151059DCC7E71D /* Pods_iOSApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -128,6 +134,7 @@
 				A0E10CAA26151BE200D36477 /* HorizontalRailsTableViewCell.xib */,
 				A08A8139261654B300943C99 /* HorizontalRailsCollectionViewCell.swift */,
 				A08A813A261654B300943C99 /* HorizontalRailsCollectionViewCell.xib */,
+				A05914B3261E14E400BDBEBE /* CoverScreenViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -192,6 +199,7 @@
 		A01F3B06260904770051E3C4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A00C6A2F261CE64000FD0979 /* UIImage+Assets.swift */,
 				A0C682C4260257360032A22C /* Info.plist */,
 				A0C682BF260257360032A22C /* Assets.xcassets */,
 			);
@@ -264,8 +272,10 @@
 			buildConfigurationList = A0C682C7260257360032A22C /* Build configuration list for PBXNativeTarget "iOSApp" */;
 			buildPhases = (
 				0F0B9BF3A7508CD8049A6486 /* [CP] Check Pods Manifest.lock */,
+				A00C6A31261D01C000FD0979 /* SwiftLint */,
 				A0C682AF260257350032A22C /* Sources */,
 				A0C682B0260257350032A22C /* Frameworks */,
+				A00C6A2E261CE5E300FD0979 /* SwiftGen */,
 				A0C682B1260257350032A22C /* Resources */,
 				95C2A50D6F9E4394D6AA648C /* [CP] Embed Pods Frameworks */,
 			);
@@ -274,6 +284,9 @@
 			dependencies = (
 			);
 			name = iOSApp;
+			packageProductDependencies = (
+				A00C6A2C261CE5D600FD0979 /* Kingfisher */,
+			);
 			productName = iOSApp;
 			productReference = A0C682B3260257350032A22C /* iOSApp.app */;
 			productType = "com.apple.product-type.application";
@@ -301,6 +314,9 @@
 				Base,
 			);
 			mainGroup = A0C682AA260257350032A22C;
+			packageReferences = (
+				A00C6A2B261CE5D600FD0979 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = A0C682B4260257350032A22C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -368,6 +384,42 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSApp/Pods-iOSApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A00C6A2E261CE5E300FD0979 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftgen >/dev/null; then\n    swiftgen run xcassets -t swift4 \"${SRCROOT}/${TARGET_NAME}/Assets.xcassets\" --output \"${TARGET_NAME}/UIImage+Assets.swift\"\nelse\n    echo \"warning: SwiftGen not installed\"\nfi\n";
+		};
+		A00C6A31261D01C000FD0979 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#if which swiftlint >/dev/null; then\n  #swiftlint\n#else\n # echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n#fi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -379,6 +431,7 @@
 				A0B6A1592602732300B7C886 /* LoginViewController.swift in Sources */,
 				A0C682BB260257350032A22C /* ViewController.swift in Sources */,
 				A0B6A15D26027F3300B7C886 /* CustomTxtField.swift in Sources */,
+				A05914B4261E14E400BDBEBE /* CoverScreenViewController.swift in Sources */,
 				A0897653260E06F300AF2A3A /* AuthService.swift in Sources */,
 				A0C682B7260257350032A22C /* AppDelegate.swift in Sources */,
 				A0B6A15F2602815500B7C886 /* CustomButton.swift in Sources */,
@@ -387,6 +440,7 @@
 				A0C682B9260257350032A22C /* SceneDelegate.swift in Sources */,
 				A0B6A15B2602733700B7C886 /* RegistrationViewController.swift in Sources */,
 				A095FF2C26166DA100B395D9 /* UIImage+Assets.swift in Sources */,
+				A00C6A30261CE64000FD0979 /* UIImage+Assets.swift in Sources */,
 				A0ACF17D26067BE500AEAA03 /* RegistrationSecondViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,13 +590,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2HC5TR67QK;
 				INFOPLIST_FILE = iOSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.iOSApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.movieApp.inas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -556,13 +611,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2HC5TR67QK;
 				INFOPLIST_FILE = iOSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.iOSApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.movieApp.inas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -591,6 +647,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A00C6A2B261CE5D600FD0979 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A00C6A2C261CE5D600FD0979 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A00C6A2B261CE5D600FD0979 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A0C682AB260257350032A22C /* Project object */;
 }

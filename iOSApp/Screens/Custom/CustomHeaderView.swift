@@ -11,4 +11,5 @@ class CustomHeaderView: UITableViewHeaderFooterView {
     
     @IBOutlet weak var sectionTitleLabel: UILabel!
     
+    @IBOutlet weak var subTitle: UILabel!
 }
