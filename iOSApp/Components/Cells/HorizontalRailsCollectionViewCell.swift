@@ -10,7 +10,7 @@ import UIKit
 class HorizontalRailsCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var view: UIView!
-    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var image: UIImageView! { didSet { image.contentMode = .scaleAspectFit } }
     @IBOutlet weak var movieTitle: UILabel!
     @IBOutlet weak var movieYear: UILabel!
     

@@ -18,10 +18,10 @@ class CoverScreenViewController: UIViewController {
     }
     
     @IBAction func movieDescription(_ sender: Any) {
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 }

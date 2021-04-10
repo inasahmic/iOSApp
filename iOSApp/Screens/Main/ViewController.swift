@@ -37,12 +37,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
         return 150
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        
         return sections.count
     }
     
@@ -50,7 +48,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let headerData: TableSection = sections[section]
         let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "CustomHeaderView") as! CustomHeaderView
-        
         headerView.sectionTitleLabel.text = headerData.title
         headerView.subTitle.text = headerData.subTitle
         
@@ -58,12 +55,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        
         return 70
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return 1
     }
     
@@ -72,16 +67,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let section = sections[indexPath.section]
         let cell = tableView.dequeueReusableCell (withIdentifier: "HorizontalRailsTableViewCell", for:  indexPath) as! HorizontalRailsTableViewCell
         cell.section = section
+        
         return cell
     }
 }
-
-//extension ViewController: UICollectionViewDelegate{
-//
-//    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//        let vc = storyboard?.instantiateViewController(identifier: "CoverScreenViewController") as? CoverScreenViewController
-//        self.navigationController?.pushViewController(vc!, animated: true)
-//    }
-//    
-//}
-

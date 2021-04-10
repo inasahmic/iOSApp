@@ -107,7 +107,6 @@
 		A01F3AFC260903450051E3C4 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				A01F3B08260906520051E3C4 /* Custom */,
 				A01F3B072609054A0051E3C4 /* Launch Sreen */,
 				A01F3AFE260903B10051E3C4 /* Main */,
 				A01F3B00260903D70051E3C4 /* Registration */,
@@ -129,12 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				A0C682BA260257350032A22C /* ViewController.swift */,
-				A0C682BC260257350032A22C /* Main.storyboard */,
-				A0E10CA926151BE200D36477 /* HorizontalRailsTableViewCell.swift */,
-				A0E10CAA26151BE200D36477 /* HorizontalRailsTableViewCell.xib */,
-				A08A8139261654B300943C99 /* HorizontalRailsCollectionViewCell.swift */,
-				A08A813A261654B300943C99 /* HorizontalRailsCollectionViewCell.xib */,
 				A05914B3261E14E400BDBEBE /* CoverScreenViewController.swift */,
+				A0C682BC260257350032A22C /* Main.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -219,10 +214,30 @@
 			children = (
 				A0B6A15E2602815500B7C886 /* CustomButton.swift */,
 				A0B6A15C26027F3300B7C886 /* CustomTxtField.swift */,
-				A0BF00602617B1E50049313F /* CustomHeaderView.swift */,
 				A0BF00622617B20A0049313F /* CustomHeaderView.xib */,
+				A0BF00602617B1E50049313F /* CustomHeaderView.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		A06B125E261FA882006F8A0E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A01F3B08260906520051E3C4 /* Custom */,
+				A06B125F261FA8AF006F8A0E /* Cells */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A06B125F261FA8AF006F8A0E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A08A813A261654B300943C99 /* HorizontalRailsCollectionViewCell.xib */,
+				A0E10CA926151BE200D36477 /* HorizontalRailsTableViewCell.swift */,
+				A08A8139261654B300943C99 /* HorizontalRailsCollectionViewCell.swift */,
+				A0E10CAA26151BE200D36477 /* HorizontalRailsTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		A095FF2A26166D8700B395D9 /* Extensions */ = {
@@ -255,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				A01F3AFB260903340051E3C4 /* App */,
+				A06B125E261FA882006F8A0E /* Components */,
 				A01F3AFC260903450051E3C4 /* Screens */,
 				A01F3AFD260903720051E3C4 /* Data Access */,
 				A01F3B032609041F0051E3C4 /* Business Domain */,

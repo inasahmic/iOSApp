@@ -70,33 +70,29 @@ class HorizontalRailsTableViewCell: UITableViewCell, UICollectionViewDelegate, U
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
         return self.cellData?.count ?? 0
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        
         return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
         print("selected")
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
-    {
-        if section?.id == 1{
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if section?.id == 1 {
             return CGSize(width: 250.0, height: 130.0)
-            
         }
-        return CGSize(width: 200.0, height: 120.0)
+        
+        return CGSize(width: 180.0, height: 100.0)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         let cellNumber: CellModel = cellData?[indexPath.row] ?? CellModel(movieTitle: "", movieYear: "", image: Asset.homer.image)
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HorizontalRailsCollectionViewCell", for: indexPath) as! HorizontalRailsCollectionViewCell
+        
         cell.movieTitle.text = cellNumber.movieTitle
         cell.movieYear.text = cellNumber.movieYear
         cell.image.image = cellNumber.image
