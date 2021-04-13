@@ -7,21 +7,24 @@
 
 import UIKit
 
-class CoverScreenViewController: UIViewController {
+struct Details {
+    var title: String
+    var duration: String
+    var genre: String
+    var rating: Int
+    var description: String
+}
 
-    @IBOutlet weak var movieTitle: UILabel!
+class CoverScreenViewController: UIViewController {
     
-    @IBAction func closeView(_ sender: Any) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewcontoroller = storyboard.instantiateViewController(withIdentifier: String(describing: ViewController.self))
-        self.present(viewcontoroller, animated: true, completion: nil)
-    }
+    @IBOutlet weak private var movieTitle: UILabel!
     
-    @IBAction func movieDescription(_ sender: Any) {
-        
+    func initWithModel(model: CellModel) {
+        self.movieTitle.text = model.movieTitle
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
 }

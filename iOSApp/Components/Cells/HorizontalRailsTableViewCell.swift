@@ -13,16 +13,19 @@ struct CellModel {
     var image: UIImage
 }
 
-class HorizontalRailsTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    
-    weak var viewController: CoverScreenViewController?
+protocol HorizonatRailsCellProtocol {
+    func didSelect(cellModel: CellModel)
+}
+
+class HorizontalRailsTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet weak var collectionView: UICollectionView! { didSet { self.setupCollectionView() } }
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
     }
+    
+    var delegateObject: HorizonatRailsCellProtocol?
     
     var section: TableSection? = nil{
         didSet{
@@ -66,7 +69,7 @@ class HorizontalRailsTableViewCell: UITableViewCell, UICollectionViewDelegate, U
     func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.register(UINib(nibName: "HorizontalRailsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "HorizontalRailsCollectionViewCell")
+        collectionView.register(UINib(nibName: String(describing: HorizontalRailsCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: "HorizontalRailsCollectionViewCell")
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -78,8 +81,22 @@ class HorizontalRailsTableViewCell: UITableViewCell, UICollectionViewDelegate, U
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("selected")
+        print("selected\(indexPath.row)")
+        if let cellModel: CellModel = cellData?[indexPath.row]{
+            delegateObject?.didSelect(cellModel: cellModel)
+        }
     }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cellModel: CellModel = cellData?[indexPath.row] ?? CellModel(movieTitle: "", movieYear: "", image: Asset.homer.image)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HorizontalRailsCollectionViewCell", for: indexPath) as! HorizontalRailsCollectionViewCell
+        cell.initWithModel(model: cellModel)
+        
+        return cell
+    }
+}
+
+extension HorizontalRailsTableViewCell: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if section?.id == 1 {
@@ -87,16 +104,5 @@ class HorizontalRailsTableViewCell: UITableViewCell, UICollectionViewDelegate, U
         }
         
         return CGSize(width: 180.0, height: 100.0)
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cellNumber: CellModel = cellData?[indexPath.row] ?? CellModel(movieTitle: "", movieYear: "", image: Asset.homer.image)
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HorizontalRailsCollectionViewCell", for: indexPath) as! HorizontalRailsCollectionViewCell
-        
-        cell.movieTitle.text = cellNumber.movieTitle
-        cell.movieYear.text = cellNumber.movieYear
-        cell.image.image = cellNumber.image
-        
-        return cell
     }
 }

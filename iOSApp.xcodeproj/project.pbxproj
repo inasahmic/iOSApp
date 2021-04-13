@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A00C6A2D261CE5D600FD0979 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A00C6A2C261CE5D600FD0979 /* Kingfisher */; };
-		A00C6A30261CE64000FD0979 /* UIImage+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00C6A2F261CE64000FD0979 /* UIImage+Assets.swift */; };
+		A027EB3F26239A7700141833 /* UIImage+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027EB3E26239A7700141833 /* UIImage+Assets.swift */; };
 		A05914B4261E14E400BDBEBE /* CoverScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05914B3261E14E400BDBEBE /* CoverScreenViewController.swift */; };
 		A0897653260E06F300AF2A3A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0897652260E06F300AF2A3A /* AuthService.swift */; };
 		A08A813B261654B300943C99 /* HorizontalRailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08A8139261654B300943C99 /* HorizontalRailsCollectionViewCell.swift */; };
@@ -38,7 +38,7 @@
 		5F4A359122F2FC36F4384507 /* Pods_iOSApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B5C7C8FB87B83826B77AB44 /* Pods-iOSApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSApp.release.xcconfig"; path = "Target Support Files/Pods-iOSApp/Pods-iOSApp.release.xcconfig"; sourceTree = "<group>"; };
 		8B7613190C883533557EDB4A /* Pods-iOSApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSApp.debug.xcconfig"; path = "Target Support Files/Pods-iOSApp/Pods-iOSApp.debug.xcconfig"; sourceTree = "<group>"; };
-		A00C6A2F261CE64000FD0979 /* UIImage+Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Assets.swift"; sourceTree = "<group>"; };
+		A027EB3E26239A7700141833 /* UIImage+Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Assets.swift"; sourceTree = "<group>"; };
 		A05914B3261E14E400BDBEBE /* CoverScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverScreenViewController.swift; sourceTree = "<group>"; };
 		A0897652260E06F300AF2A3A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A08A8139261654B300943C99 /* HorizontalRailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalRailsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -194,7 +194,7 @@
 		A01F3B06260904770051E3C4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A00C6A2F261CE64000FD0979 /* UIImage+Assets.swift */,
+				A027EB3E26239A7700141833 /* UIImage+Assets.swift */,
 				A0C682C4260257360032A22C /* Info.plist */,
 				A0C682BF260257360032A22C /* Assets.xcassets */,
 			);
@@ -232,10 +232,10 @@
 		A06B125F261FA8AF006F8A0E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				A08A813A261654B300943C99 /* HorizontalRailsCollectionViewCell.xib */,
 				A0E10CA926151BE200D36477 /* HorizontalRailsTableViewCell.swift */,
-				A08A8139261654B300943C99 /* HorizontalRailsCollectionViewCell.swift */,
 				A0E10CAA26151BE200D36477 /* HorizontalRailsTableViewCell.xib */,
+				A08A8139261654B300943C99 /* HorizontalRailsCollectionViewCell.swift */,
+				A08A813A261654B300943C99 /* HorizontalRailsCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -444,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0E10CAB26151BE200D36477 /* HorizontalRailsTableViewCell.swift in Sources */,
+				A027EB3F26239A7700141833 /* UIImage+Assets.swift in Sources */,
 				A0B6A1592602732300B7C886 /* LoginViewController.swift in Sources */,
 				A0C682BB260257350032A22C /* ViewController.swift in Sources */,
 				A0B6A15D26027F3300B7C886 /* CustomTxtField.swift in Sources */,
@@ -456,7 +457,6 @@
 				A0C682B9260257350032A22C /* SceneDelegate.swift in Sources */,
 				A0B6A15B2602733700B7C886 /* RegistrationViewController.swift in Sources */,
 				A095FF2C26166DA100B395D9 /* UIImage+Assets.swift in Sources */,
-				A00C6A30261CE64000FD0979 /* UIImage+Assets.swift in Sources */,
 				A0ACF17D26067BE500AEAA03 /* RegistrationSecondViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

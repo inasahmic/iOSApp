@@ -21,8 +21,11 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RUL-et-9ug">
                         <rect key="frame" x="0.0" y="0.0" width="247" height="156"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homer" translatesAutoresizingMaskIntoConstraints="NO" id="qJO-NR-WkZ">
+                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kingfisher-2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qJO-NR-WkZ">
                                 <rect key="frame" x="0.0" y="0.0" width="247" height="156"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="iYp-xc-UwP">
                                 <rect key="frame" x="8" y="117" width="70.5" height="29"/>
@@ -73,7 +76,7 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="homer" width="150" height="150"/>
+        <image name="kingfisher-2.jpg" width="250" height="250"/>
         <namedColor name="siva">
             <color red="0.16699999570846558" green="0.16699999570846558" blue="0.16699999570846558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

@@ -32,8 +32,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func registerCells(){
-        self.tableView.register(UINib(nibName: "CustomHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: "CustomHeaderView")
-        self.tableView.register(UINib(nibName: "HorizontalRailsTableViewCell", bundle: nil), forCellReuseIdentifier: "HorizontalRailsTableViewCell")
+        self.tableView.register(UINib(nibName: String(describing: CustomHeaderView.self), bundle: nil), forHeaderFooterViewReuseIdentifier: "CustomHeaderView")
+        self.tableView.register(UINib(nibName: String(describing: HorizontalRailsTableViewCell.self), bundle: nil), forCellReuseIdentifier: "HorizontalRailsTableViewCell")
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -47,7 +47,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let headerData: TableSection = sections[section]
-        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "CustomHeaderView") as! CustomHeaderView
+        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: String(describing: CustomHeaderView.self)) as! CustomHeaderView
         headerView.sectionTitleLabel.text = headerData.title
         headerView.subTitle.text = headerData.subTitle
         
@@ -65,9 +65,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let section = sections[indexPath.section]
-        let cell = tableView.dequeueReusableCell (withIdentifier: "HorizontalRailsTableViewCell", for:  indexPath) as! HorizontalRailsTableViewCell
+        let cell = tableView.dequeueReusableCell (withIdentifier: String(describing: HorizontalRailsTableViewCell.self), for:  indexPath) as! HorizontalRailsTableViewCell
         cell.section = section
+        cell.delegateObject = self
         
         return cell
+    }
+}
+
+extension ViewController: HorizonatRailsCellProtocol {
+    
+    func didSelect(cellModel: CellModel) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewcontoroller = storyboard.instantiateViewController(identifier: "CoverScreenViewController")
+        self.present(viewcontoroller, animated: true, completion: nil)
     }
 }
