@@ -22,21 +22,19 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func button(_ sender: Any) {
-        
         let storyboard = UIStoryboard(name: "Registration", bundle: nil)
         let viewcontoroller = storyboard.instantiateViewController(identifier: "RegistrationViewController")
         let service = AuthService()
         
         self.present(viewcontoroller, animated: true, completion: nil)
         service.refreshToken()
-        print(service.reqToken!)
+        // print(service.reqToken!)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
-        
     }
     
     @objc func dismissKeyboard() {
@@ -77,5 +75,4 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             break
         }
     }
-    
 }

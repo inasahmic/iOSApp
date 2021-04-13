@@ -5,6 +5,7 @@ target 'iOSApp' do
   
   use_frameworks!
   pod 'Alamofire'
+  pod 'SwiftGen'
 
   
 

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18092"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="HorizontalRailsCollectionViewCell" customModule="iOSApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="247" height="156"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="247" height="156"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RUL-et-9ug">
+                        <rect key="frame" x="0.0" y="0.0" width="247" height="156"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kingfisher-2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qJO-NR-WkZ">
+                                <rect key="frame" x="0.0" y="0.0" width="247" height="156"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="iYp-xc-UwP">
+                                <rect key="frame" x="8" y="117" width="70.5" height="29"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oei-GH-6Ze">
+                                        <rect key="frame" x="0.0" y="0.0" width="70.5" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" systemColor="systemGray6Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezc-Yr-dPX">
+                                        <rect key="frame" x="0.0" y="17" width="21.5" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" systemColor="systemGray6Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="siva"/>
+                        <constraints>
+                            <constraint firstItem="qJO-NR-WkZ" firstAttribute="top" secondItem="RUL-et-9ug" secondAttribute="top" id="bXG-ae-zYu"/>
+                            <constraint firstAttribute="bottom" secondItem="qJO-NR-WkZ" secondAttribute="bottom" id="bXK-2s-HfR"/>
+                            <constraint firstItem="qJO-NR-WkZ" firstAttribute="leading" secondItem="RUL-et-9ug" secondAttribute="leading" id="j1g-no-Ahy"/>
+                            <constraint firstItem="iYp-xc-UwP" firstAttribute="leading" secondItem="RUL-et-9ug" secondAttribute="leading" constant="8" id="kn6-eA-l9b"/>
+                            <constraint firstAttribute="trailing" secondItem="qJO-NR-WkZ" secondAttribute="trailing" id="mOy-19-nFn"/>
+                            <constraint firstAttribute="bottom" secondItem="iYp-xc-UwP" secondAttribute="bottom" constant="10" id="oOG-qL-wx6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="RUL-et-9ug" secondAttribute="bottom" id="Z9h-no-cTH"/>
+                <constraint firstAttribute="trailing" secondItem="RUL-et-9ug" secondAttribute="trailing" id="jVF-9c-Jwn"/>
+                <constraint firstItem="RUL-et-9ug" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="u7n-ZL-7nv"/>
+                <constraint firstItem="RUL-et-9ug" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xgg-9t-NbR"/>
+            </constraints>
+            <size key="customSize" width="231" height="156"/>
+            <connections>
+                <outlet property="image" destination="qJO-NR-WkZ" id="Dzq-nQ-5AE"/>
+                <outlet property="movieTitle" destination="Oei-GH-6Ze" id="57A-te-TNj"/>
+                <outlet property="movieYear" destination="ezc-Yr-dPX" id="2QQ-Gq-OQk"/>
+                <outlet property="view" destination="RUL-et-9ug" id="MvH-iP-vVC"/>
+            </connections>
+            <point key="canvasLocation" x="351.44927536231887" y="12.723214285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="kingfisher-2.jpg" width="250" height="250"/>
+        <namedColor name="siva">
+            <color red="0.16699999570846558" green="0.16699999570846558" blue="0.16699999570846558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

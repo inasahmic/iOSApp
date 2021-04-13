@@ -3,11 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A00C6A2D261CE5D600FD0979 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A00C6A2C261CE5D600FD0979 /* Kingfisher */; };
+		A027EB3F26239A7700141833 /* UIImage+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A027EB3E26239A7700141833 /* UIImage+Assets.swift */; };
+		A05914B4261E14E400BDBEBE /* CoverScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05914B3261E14E400BDBEBE /* CoverScreenViewController.swift */; };
 		A0897653260E06F300AF2A3A /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0897652260E06F300AF2A3A /* AuthService.swift */; };
+		A08A813B261654B300943C99 /* HorizontalRailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08A8139261654B300943C99 /* HorizontalRailsCollectionViewCell.swift */; };
+		A08A813C261654B300943C99 /* HorizontalRailsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A08A813A261654B300943C99 /* HorizontalRailsCollectionViewCell.xib */; };
+		A095FF2C26166DA100B395D9 /* UIImage+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A095FF2B26166DA100B395D9 /* UIImage+Assets.swift */; };
 		A0ACF17D26067BE500AEAA03 /* RegistrationSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0ACF17C26067BE500AEAA03 /* RegistrationSecondViewController.swift */; };
 		A0B6A1552602700900B7C886 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B6A1542602700900B7C886 /* Login.storyboard */; };
 		A0B6A1572602702700B7C886 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B6A1562602702700B7C886 /* Registration.storyboard */; };
@@ -15,12 +21,16 @@
 		A0B6A15B2602733700B7C886 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B6A15A2602733700B7C886 /* RegistrationViewController.swift */; };
 		A0B6A15D26027F3300B7C886 /* CustomTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B6A15C26027F3300B7C886 /* CustomTxtField.swift */; };
 		A0B6A15F2602815500B7C886 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B6A15E2602815500B7C886 /* CustomButton.swift */; };
+		A0BF00612617B1E50049313F /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BF00602617B1E50049313F /* CustomHeaderView.swift */; };
+		A0BF00632617B20A0049313F /* CustomHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0BF00622617B20A0049313F /* CustomHeaderView.xib */; };
 		A0C682B7260257350032A22C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C682B6260257350032A22C /* AppDelegate.swift */; };
 		A0C682B9260257350032A22C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C682B8260257350032A22C /* SceneDelegate.swift */; };
 		A0C682BB260257350032A22C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C682BA260257350032A22C /* ViewController.swift */; };
 		A0C682BE260257350032A22C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C682BC260257350032A22C /* Main.storyboard */; };
 		A0C682C0260257360032A22C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C682BF260257360032A22C /* Assets.xcassets */; };
 		A0C682C3260257360032A22C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C682C1260257360032A22C /* LaunchScreen.storyboard */; };
+		A0E10CAB26151BE200D36477 /* HorizontalRailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E10CA926151BE200D36477 /* HorizontalRailsTableViewCell.swift */; };
+		A0E10CAC26151BE200D36477 /* HorizontalRailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0E10CAA26151BE200D36477 /* HorizontalRailsTableViewCell.xib */; };
 		F3102CE6B8151059DCC7E71D /* Pods_iOSApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F4A359122F2FC36F4384507 /* Pods_iOSApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,7 +38,12 @@
 		5F4A359122F2FC36F4384507 /* Pods_iOSApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B5C7C8FB87B83826B77AB44 /* Pods-iOSApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSApp.release.xcconfig"; path = "Target Support Files/Pods-iOSApp/Pods-iOSApp.release.xcconfig"; sourceTree = "<group>"; };
 		8B7613190C883533557EDB4A /* Pods-iOSApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSApp.debug.xcconfig"; path = "Target Support Files/Pods-iOSApp/Pods-iOSApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A027EB3E26239A7700141833 /* UIImage+Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Assets.swift"; sourceTree = "<group>"; };
+		A05914B3261E14E400BDBEBE /* CoverScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverScreenViewController.swift; sourceTree = "<group>"; };
 		A0897652260E06F300AF2A3A /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		A08A8139261654B300943C99 /* HorizontalRailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalRailsCollectionViewCell.swift; sourceTree = "<group>"; };
+		A08A813A261654B300943C99 /* HorizontalRailsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalRailsCollectionViewCell.xib; sourceTree = "<group>"; };
+		A095FF2B26166DA100B395D9 /* UIImage+Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Assets.swift"; path = "iOSApp/UIImage+Assets.swift"; sourceTree = SOURCE_ROOT; };
 		A0ACF17C26067BE500AEAA03 /* RegistrationSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationSecondViewController.swift; sourceTree = "<group>"; };
 		A0B6A1542602700900B7C886 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		A0B6A1562602702700B7C886 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
@@ -36,6 +51,8 @@
 		A0B6A15A2602733700B7C886 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		A0B6A15C26027F3300B7C886 /* CustomTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTxtField.swift; sourceTree = "<group>"; };
 		A0B6A15E2602815500B7C886 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		A0BF00602617B1E50049313F /* CustomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
+		A0BF00622617B20A0049313F /* CustomHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeaderView.xib; sourceTree = "<group>"; };
 		A0C682B3260257350032A22C /* iOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C682B6260257350032A22C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0C682B8260257350032A22C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -44,6 +61,8 @@
 		A0C682BF260257360032A22C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0C682C2260257360032A22C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0C682C4260257360032A22C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0E10CA926151BE200D36477 /* HorizontalRailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalRailsTableViewCell.swift; sourceTree = "<group>"; };
+		A0E10CAA26151BE200D36477 /* HorizontalRailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HorizontalRailsTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A00C6A2D261CE5D600FD0979 /* Kingfisher in Frameworks */,
 				F3102CE6B8151059DCC7E71D /* Pods_iOSApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,7 +107,6 @@
 		A01F3AFC260903450051E3C4 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				A01F3B08260906520051E3C4 /* Custom */,
 				A01F3B072609054A0051E3C4 /* Launch Sreen */,
 				A01F3AFE260903B10051E3C4 /* Main */,
 				A01F3B00260903D70051E3C4 /* Registration */,
@@ -109,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				A0C682BA260257350032A22C /* ViewController.swift */,
+				A05914B3261E14E400BDBEBE /* CoverScreenViewController.swift */,
 				A0C682BC260257350032A22C /* Main.storyboard */,
 			);
 			path = Main;
@@ -166,6 +186,7 @@
 		A01F3B05260904560051E3C4 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A095FF2A26166D8700B395D9 /* Extensions */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -173,6 +194,7 @@
 		A01F3B06260904770051E3C4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A027EB3E26239A7700141833 /* UIImage+Assets.swift */,
 				A0C682C4260257360032A22C /* Info.plist */,
 				A0C682BF260257360032A22C /* Assets.xcassets */,
 			);
@@ -192,8 +214,38 @@
 			children = (
 				A0B6A15E2602815500B7C886 /* CustomButton.swift */,
 				A0B6A15C26027F3300B7C886 /* CustomTxtField.swift */,
+				A0BF00622617B20A0049313F /* CustomHeaderView.xib */,
+				A0BF00602617B1E50049313F /* CustomHeaderView.swift */,
 			);
 			path = Custom;
+			sourceTree = "<group>";
+		};
+		A06B125E261FA882006F8A0E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A01F3B08260906520051E3C4 /* Custom */,
+				A06B125F261FA8AF006F8A0E /* Cells */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A06B125F261FA8AF006F8A0E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A0E10CA926151BE200D36477 /* HorizontalRailsTableViewCell.swift */,
+				A0E10CAA26151BE200D36477 /* HorizontalRailsTableViewCell.xib */,
+				A08A8139261654B300943C99 /* HorizontalRailsCollectionViewCell.swift */,
+				A08A813A261654B300943C99 /* HorizontalRailsCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A095FF2A26166D8700B395D9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A095FF2B26166DA100B395D9 /* UIImage+Assets.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A0C682AA260257350032A22C = {
@@ -218,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				A01F3AFB260903340051E3C4 /* App */,
+				A06B125E261FA882006F8A0E /* Components */,
 				A01F3AFC260903450051E3C4 /* Screens */,
 				A01F3AFD260903720051E3C4 /* Data Access */,
 				A01F3B032609041F0051E3C4 /* Business Domain */,
@@ -235,8 +288,10 @@
 			buildConfigurationList = A0C682C7260257360032A22C /* Build configuration list for PBXNativeTarget "iOSApp" */;
 			buildPhases = (
 				0F0B9BF3A7508CD8049A6486 /* [CP] Check Pods Manifest.lock */,
+				A00C6A31261D01C000FD0979 /* SwiftLint */,
 				A0C682AF260257350032A22C /* Sources */,
 				A0C682B0260257350032A22C /* Frameworks */,
+				A00C6A2E261CE5E300FD0979 /* SwiftGen */,
 				A0C682B1260257350032A22C /* Resources */,
 				95C2A50D6F9E4394D6AA648C /* [CP] Embed Pods Frameworks */,
 			);
@@ -245,6 +300,9 @@
 			dependencies = (
 			);
 			name = iOSApp;
+			packageProductDependencies = (
+				A00C6A2C261CE5D600FD0979 /* Kingfisher */,
+			);
 			productName = iOSApp;
 			productReference = A0C682B3260257350032A22C /* iOSApp.app */;
 			productType = "com.apple.product-type.application";
@@ -272,6 +330,9 @@
 				Base,
 			);
 			mainGroup = A0C682AA260257350032A22C;
+			packageReferences = (
+				A00C6A2B261CE5D600FD0979 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = A0C682B4260257350032A22C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -288,9 +349,12 @@
 			files = (
 				A0B6A1572602702700B7C886 /* Registration.storyboard in Resources */,
 				A0B6A1552602700900B7C886 /* Login.storyboard in Resources */,
+				A0E10CAC26151BE200D36477 /* HorizontalRailsTableViewCell.xib in Resources */,
 				A0C682C3260257360032A22C /* LaunchScreen.storyboard in Resources */,
+				A0BF00632617B20A0049313F /* CustomHeaderView.xib in Resources */,
 				A0C682C0260257360032A22C /* Assets.xcassets in Resources */,
 				A0C682BE260257350032A22C /* Main.storyboard in Resources */,
+				A08A813C261654B300943C99 /* HorizontalRailsCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +400,42 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSApp/Pods-iOSApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A00C6A2E261CE5E300FD0979 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftgen >/dev/null; then\n    swiftgen run xcassets -t swift4 \"${SRCROOT}/${TARGET_NAME}/Assets.xcassets\" --output \"${TARGET_NAME}/UIImage+Assets.swift\"\nelse\n    echo \"warning: SwiftGen not installed\"\nfi\n";
+		};
+		A00C6A31261D01C000FD0979 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#if which swiftlint >/dev/null; then\n  #swiftlint\n#else\n # echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n#fi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -343,14 +443,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0E10CAB26151BE200D36477 /* HorizontalRailsTableViewCell.swift in Sources */,
+				A027EB3F26239A7700141833 /* UIImage+Assets.swift in Sources */,
 				A0B6A1592602732300B7C886 /* LoginViewController.swift in Sources */,
 				A0C682BB260257350032A22C /* ViewController.swift in Sources */,
 				A0B6A15D26027F3300B7C886 /* CustomTxtField.swift in Sources */,
+				A05914B4261E14E400BDBEBE /* CoverScreenViewController.swift in Sources */,
 				A0897653260E06F300AF2A3A /* AuthService.swift in Sources */,
 				A0C682B7260257350032A22C /* AppDelegate.swift in Sources */,
 				A0B6A15F2602815500B7C886 /* CustomButton.swift in Sources */,
+				A08A813B261654B300943C99 /* HorizontalRailsCollectionViewCell.swift in Sources */,
+				A0BF00612617B1E50049313F /* CustomHeaderView.swift in Sources */,
 				A0C682B9260257350032A22C /* SceneDelegate.swift in Sources */,
 				A0B6A15B2602733700B7C886 /* RegistrationViewController.swift in Sources */,
+				A095FF2C26166DA100B395D9 /* UIImage+Assets.swift in Sources */,
 				A0ACF17D26067BE500AEAA03 /* RegistrationSecondViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -500,13 +606,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2HC5TR67QK;
 				INFOPLIST_FILE = iOSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.iOSApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.movieApp.inas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -520,13 +627,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2HC5TR67QK;
 				INFOPLIST_FILE = iOSApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.app.iOSApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.movieApp.inas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -555,6 +663,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A00C6A2B261CE5D600FD0979 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A00C6A2C261CE5D600FD0979 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A00C6A2B261CE5D600FD0979 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A0C682AB260257350032A22C /* Project object */;
 }
